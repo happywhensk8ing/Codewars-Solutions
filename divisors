@@ -1,0 +1,13 @@
+#Script that returns array with integer's divisors or a statement that the number is prime if no divisors
+
+def divisors(integer):
+    integer = int(integer)
+    multiple = []
+    if integer > 1:
+        for i in range(2, integer):
+            if (integer % i) == 0:
+                multiple.append(i)
+    if multiple == []:
+        return("'" + str(integer) + " is prime'")
+    else:
+        return(multiple)
