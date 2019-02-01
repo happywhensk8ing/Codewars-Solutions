@@ -1,0 +1,10 @@
+def alphabet_position(text):
+    text = text.lower()
+    key1 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    answer = ""
+    for i in text:
+        if i in key1:
+            answer = answer + str(key1.index(i)+1) + " "
+        else:
+            continue
+    return answer
